@@ -13,15 +13,21 @@ func main() {
 
 
 	var UserName string
+	var UserEmail string
 	var UserTickets int
 
 	// Get user details
 	fmt.Println("Please enter your name: ")
 	fmt.Scan(&UserName)
+	fmt.Println("Please enter your email: ")
+	fmt.Scan(&UserEmail)
 	fmt.Println("How many tickets would you like to book?")
 	fmt.Scan(&UserTickets)
+	
+	remainingTickets = remainingTickets - UserTickets
 
-	fmt.Printf("Thank you %v for booking %v tickets\n", UserName, UserTickets)
+	fmt.Printf("Thank you %v for booking %v tickets , you will receive a notification on %v , please check your inbox!!!\n", UserName, UserTickets, UserEmail)
+	fmt.Printf("We have %v tickets remaining\n", remainingTickets)
 
 }
 
