@@ -12,11 +12,10 @@ func main() {
 	fmt.Printf("We have a total of %v and only %v tickets remaining\n", ConferenceTickets, remainingTickets)
 	fmt.Println("Get your tickets now!")
 
-	
+	for {
 
-
-	var UserName string
-	var UserEmail string
+		var UserName string
+	    var UserEmail string
 	var UserTickets int
 
 	// Get user details
@@ -36,6 +35,13 @@ func main() {
 
 
 	fmt.Printf("Bookings: %v\n", bookings)
+
+	}
+
+	
+
+
+	
 
 }
 
